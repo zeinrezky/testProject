@@ -22,8 +22,17 @@ class ViewController: UIViewController {
     }
 
     func setup(){
-        print("test ini ya")
+        findMath(number: 100)
+    }
+    
+    func findMath(number:Int){
+        print(number)
     }
     
 }
 
+class delegation: ViewController {
+    override func findMath(number: Int) {
+        print(number)
+    }
+}
