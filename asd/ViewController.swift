@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     func setup(){
-        
+        print("test ini ya")
     }
     
 }
