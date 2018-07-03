@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     func setup(){
-        findMath(number: 100)
+        findMath(number: 90)
     }
     
     func findMath(number:Int){
