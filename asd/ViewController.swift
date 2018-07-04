@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func buttonPressed(_ sender: Any) {
+        let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        present(detail, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +27,7 @@ class ViewController: UIViewController {
     }
 
     func setup(){
-        findMath(number: 99)
+        findMath(number: 80)
     }
     
     func findMath(number:Int){

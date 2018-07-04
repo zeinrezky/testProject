@@ -26,26 +26,7 @@ class DetailViewController: UIViewController {
     }
     
     func setupConfig(){
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
-}
-
-extension DetailViewController: UITableViewDataSource{
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-}
-
-extension DetailViewController: UITableViewDelegate{
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellStatic = tableView.dequeueReusableCell(withIdentifier: "asd")!
-        return cellStatic
+//        tableView.delegate = self
+//        tableView.dataSource = self
     }
 }
