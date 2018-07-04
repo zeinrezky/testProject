@@ -10,10 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func buttonPressed(_ sender: Any) {
+        let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        present(detail, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setup()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,10 +28,10 @@ class ViewController: UIViewController {
 
     func setup(){
 <<<<<<< HEAD
-        findMath(number: 88)
+        findMath(number: 77)
 =======
-        findMath(number: 90)
->>>>>>> 288665228f1c9de67617e288de585073fd21574a
+        findMath(number: 80)
+>>>>>>> 11b0f57ebbce1f4c16cc60ad416d2d5e265830ed
     }
     
     func findMath(number:Int){
