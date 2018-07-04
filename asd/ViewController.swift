@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
 
     func setup(){
-        findMath(number: 77)
+        findMath(number: 55)
     }
     
     func findMath(number:Int){
