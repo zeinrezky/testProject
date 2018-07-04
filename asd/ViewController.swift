@@ -20,14 +20,12 @@ class ViewController: UIViewController {
         setup()
         
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     func setup(){
-        findMath(number: 80)
+        findMath(number: 70)
     }
     
     func findMath(number:Int){
