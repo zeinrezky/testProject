@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="asd" customModuleProvider="target">
             <connections>
-                <outlet property="myImage" destination="9dm-5V-qn4" id="obY-ab-mX6"/>
+                <outlet property="tableView" destination="mUO-CT-cNv" id="MYI-ml-St4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,21 +21,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emotions" translatesAutoresizingMaskIntoConstraints="NO" id="9dm-5V-qn4">
-                    <rect key="frame" x="20" y="64" width="335" height="694"/>
-                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mUO-CT-cNv">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="asd" translatesAutoresizingMaskIntoConstraints="NO" id="Xkj-Eu-F8m">
+                    <rect key="frame" x="0.0" y="71" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xkj-Eu-F8m" id="x56-pi-fHz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableViewCellContentView>
+                </tableViewCell>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="9dm-5V-qn4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZO7-QO-qtZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9dm-5V-qn4" secondAttribute="trailing" constant="20" id="caB-3U-5gM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9dm-5V-qn4" secondAttribute="bottom" constant="20" id="cxc-nM-dF5"/>
-                <constraint firstItem="9dm-5V-qn4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="iqv-qD-38k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mUO-CT-cNv" secondAttribute="trailing" id="3UF-KX-gDD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mUO-CT-cNv" secondAttribute="bottom" id="bgU-AF-3mZ"/>
+                <constraint firstItem="mUO-CT-cNv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dCq-4E-WWY"/>
+                <constraint firstItem="mUO-CT-cNv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sZB-Nc-EU8"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
-    <resources>
-        <image name="emotions" width="498" height="390"/>
-    </resources>
 </document>
